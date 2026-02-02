@@ -5,6 +5,7 @@ import { Github, Linkedin, Mail, Phone, X } from "lucide-react";
 
 export default function PortfolioPage() {
   const { scrollYProgress } = useScroll();
+  
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 120,
     damping: 30,

@@ -306,7 +306,7 @@ export default function PortfolioPage() {
             {[
               { icon: <Mail size={20} />, label: "Email", value: "pratikbhandari00722@gmail.com" },
               { icon: <Phone size={20} />, label: "Phone", value: "+91 9664698768" },
-              { icon: <Instagram size={20} />, label: "Instagram", value: "instagram.com" },
+              { icon: <Instagram size={20} />, label: "Instagram", value: "https://www.instagram.com/pratik.webstudio/" },
               { icon: <Linkedin size={20} />, label: "LinkedIn", value: "www.linkedin.com/in/pratik-bhandari-136b5519a" },
             ].map((item, i) => (
               <div

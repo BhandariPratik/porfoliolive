@@ -178,9 +178,19 @@ export default function PortfolioPage() {
                 transition={{ repeat: Infinity, duration: 8 }}
                 className="w-56 h-56 sm:w-72 sm:h-72 rounded-3xl bg-gradient-to-tr from-red-600 via-red-500 to-red-400 p-[2px]"
               >
-                <div className="w-full h-full rounded-3xl bg-black flex items-center justify-center text-5xl sm:text-6xl font-bold">
+                {/* <div className="w-full h-full rounded-3xl bg-black flex items-center justify-center text-5xl sm:text-6xl font-bold">
                   PB
+                </div> */}
+
+                <div className="w-full h-full rounded-3xl bg-black overflow-hidden">
+                  <img
+                    src="/profile-vercel.jpg" // replace with your image path
+                    alt="Pratik Bhandari"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
+
+
               </motion.div>
             </div>
           </div>
@@ -286,10 +296,10 @@ export default function PortfolioPage() {
               {selectedProject.tech}
             </p>
             {
-              selectedProject?.url && 
+              selectedProject?.url &&
               <p className="text-blue-400">
-              URL - {selectedProject.url}
-            </p>
+                URL - {selectedProject.url}
+              </p>
             }
           </motion.div>
         </div>

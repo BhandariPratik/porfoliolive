@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Pratik-portfolio",
   description: "Developed by pratik.webstudio",
+  icons: {
+    icon: "/navigate1.png",
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -314,21 +314,44 @@ export default function PortfolioPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: <Mail size={20} />, label: "Email", value: "pratikbhandari00722@gmail.com" },
-              { icon: <Phone size={20} />, label: "Phone", value: "+91 9664698768" },
-              { icon: <Instagram size={20} />, label: "Instagram", value: "https://www.instagram.com/pratik.webstudio/" },
-              { icon: <Linkedin size={20} />, label: "LinkedIn", value: "www.linkedin.com/in/pratik-bhandari-136b5519a" },
+              {
+                icon: <Mail size={20} />,
+                label: "Email",
+                value: "pratikbhandari00722@gmail.com",
+                link: "mailto:pratikbhandari00722@gmail.com",
+              },
+              {
+                icon: <Phone size={20} />,
+                label: "Phone",
+                value: "+91 9664698768",
+                link: "tel:+919664698768",
+              },
+              {
+                icon: <Instagram size={20} />,
+                label: "Instagram",
+                value: "pratik.webstudio",
+                link: "https://www.instagram.com/pratik.webstudio/",
+              },
+              {
+                icon: <Linkedin size={20} />,
+                label: "LinkedIn",
+                value: "Pratik Bhandari",
+                link: "https://www.linkedin.com/in/pratik-bhandari-136b5519a",
+              },
             ].map((item, i) => (
-              <div
+              <a
                 key={i}
-                className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center text-center gap-3"
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center text-center gap-3 hover:bg-white/10 transition cursor-pointer"
               >
                 {item.icon}
                 <h4 className="font-semibold">{item.label}</h4>
-                <p className="text-gray-400 text-sm break-all">
+                <p className="text-gray-100 text-sm break-all">
                   {item.value}
                 </p>
-              </div>
+              </a>
             ))}
           </div>
         </div>

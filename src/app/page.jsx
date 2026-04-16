@@ -184,7 +184,7 @@ export default function PortfolioPage() {
 
                 <div className="w-full h-full rounded-3xl bg-black overflow-hidden">
                   <img
-                    src="/profile-vercel.jpg" // replace with your image path
+                    src="/profile-vercel.png" // replace with your image path
                     alt="Pratik Bhandari"
                     className="w-full h-full object-cover"
                   />

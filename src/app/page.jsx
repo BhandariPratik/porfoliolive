@@ -159,7 +159,7 @@ export default function PortfolioPage() {
 
               <div className="flex flex-wrap gap-4 mt-8">
                 <a
-                  href="/resume/resume.pdf"
+                  href="/resume/Pratik_Bhandari_cv.pdf"
                   download
                   className="px-6 py-3 rounded-xl bg-gray-700 hover:bg-gray-500 transition font-medium inline-flex items-center justify-center"
                 >
